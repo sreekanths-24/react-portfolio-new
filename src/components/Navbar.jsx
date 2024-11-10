@@ -50,14 +50,14 @@ function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden bg-black text-white absolute top-0 left-0 w-full h-screen flex flex-col  ps-5 justify-center space-y-8 transition-all duration-300 ease-in-out transform ${
+        className={`md:hidden bg-black text-gray-300 absolute top-0 left-0 w-full h-dvh flex flex-col  ps-5 justify-center space-y-8 transition-all duration-300 ease-in-out transform ${
           isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
         }`}
       >
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-4 right-4 text-white text-6xl"
+          className="absolute top-4 right-4 text-gray-300 text-6xl"
         >
           &times;
         </button>
@@ -67,6 +67,7 @@ function Navbar() {
           href="/"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
+          data-aos="fade-right"
         >
           Home
         </a>
@@ -74,6 +75,7 @@ function Navbar() {
           href="/"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
+          data-aos="fade-right"
         >
           About Me
         </a>
@@ -81,6 +83,7 @@ function Navbar() {
           href="/"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
+          data-aos="fade-right"
         >
           Portfolio
         </a>
@@ -89,6 +92,7 @@ function Navbar() {
           href="/services"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
+          data-aos="fade-right"
         >
           Services
         </a>
@@ -96,6 +100,7 @@ function Navbar() {
           href="/blogs"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
+          data-aos="fade-right"
         >
           Blogs
         </a>
@@ -103,6 +108,7 @@ function Navbar() {
           href="/services"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
+          data-aos="fade-right"
         >
           Contact Me
         </a>
@@ -142,7 +148,7 @@ function Navbar() {
     href="https://github.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="mx-4 text-white  transition-colors"
+    className="mx-4 text-gray-300  transition-colors"
   >
     <i className="fab fa-github"></i>
   </a>
