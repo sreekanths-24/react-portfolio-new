@@ -38,8 +38,8 @@ function Work() {
   ];
 
   return (
-      <section className="py-12 px-3 lg:px-36 min-h-dvh bg-black">
-          <h2 className="text-5xl leading-tight lg:text-7xl font-bold text-gray-300 mt-5 lg:mt-40 mb-20">Check out <br className='block md:hidden' /><span className='text-indigo-500'>my Portfolio</span></h2>
+      <section className="pt-12 px-3 lg:px-36 min-h-dvh pb-48 bg-black">
+          <h2 className="text-5xl leading-none lg:text-7xl font-bold text-gray-300 mt-5 lg:mt-40 mb-20">Check out <br className='block md:hidden' /><span className='text-indigo-500'>my Portfolio</span></h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {cards.map((card, index) => (
           <Card key={index} title={card.title} image={card.image} description={card.description} />

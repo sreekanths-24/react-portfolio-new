@@ -1,20 +1,44 @@
 import React from 'react';
+import { useEffect, useRef } from 'react';
 import Bgimg from '../../assets/bgimg.jpg';
 import Profile from '../../assets/profile.png';
 import Work from './Work';
+import Contact from '../Contact/Contact';
+import Typed from 'typed.js';
 
 function Home() {
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    // Initialize Typed.js
+    const typed = new Typed(typedRef.current, {
+      strings: [
+        'I am a Professional Full Stack Developer.',
+        'I have a talent for developing and designing websites.',
+        'I help brands setup an online pressence for their business.',
+        'Lets Build Great Things Together!',
+      ], // Array of strings for typing effect
+      typeSpeed: 50, // Typing speed in milliseconds
+      backSpeed: 30, // Backspacing speed in milliseconds
+      loop: true, // Loop the typing animation
+    });
+
+    // Cleanup on component unmount
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <>
     <section
-      className="relative bg-cover bg-center min-h-dvh flex items-center justify-center"
+      className="relative bg-cover bg-center min-h-svh flex items-center justify-center"
       style={{ backgroundImage: `url(${Bgimg})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-70"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center text-gray-300 w-full px-4 lg:px-12 max-w-7xl">
+      <div className="relative z-10 flex flex-col md:flex-row md:items-center text-gray-300 w-full px-4 lg:px-12 max-w-7xl">
 {/* Profile Image */}
 <div className="block md:hidden md:w-1/2 md:pl-8 mb-8 lg:mb-0">
           <img 
@@ -31,8 +55,8 @@ function Home() {
           <h1 className="text-4xl lg:text-7xl font-bold leading-tight">
             Hi there, <br  /> <span className='text-indigo-500'>I'm Sreekanth S</span>
           </h1>
-          <p className="mt-6 text-xl lg:text-2xl text-gray-200">
-            Showcasing my projects, blogs, and the services I offer
+          <p className="mt-6 text-xl lg:text-2xl text-gray-200 min-h-14">
+          <span ref={typedRef}></span> {/* Dynamic text here */}
           </p>
           <div className="mt-10">
             <a
@@ -56,6 +80,7 @@ function Home() {
       </div>
       </section>
       <Work />
+      <Contact />
     </>
 
   );
