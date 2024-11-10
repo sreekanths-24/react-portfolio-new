@@ -14,9 +14,9 @@ function Home() {
       <div className="absolute inset-0 bg-black opacity-70"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-center text-gray-300 w-full px-4 lg:px-12 max-w-7xl">
+      <div className="relative z-10 flex flex-col md:flex-row items-center text-gray-300 w-full px-4 lg:px-12 max-w-7xl">
 {/* Profile Image */}
-<div className="block lg:hidden lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
+<div className="block md:hidden md:w-1/2 md:pl-8 mb-8 lg:mb-0">
           <img 
             src={Profile} 
             alt="Profile" 
@@ -27,9 +27,9 @@ function Home() {
         </div>
         
         {/* Text Content */}
-        <div className="lg:w-1/2 lg:pr-8" data-aos="fade-down">
+        <div className="md:w-1/2 md:pr-8" data-aos="fade-down">
           <h1 className="text-4xl lg:text-7xl font-bold leading-tight">
-            Hi there, <br  /> I'm Sreekanth S
+            Hi there, <br  /> <span className='text-indigo-500'>I'm Sreekanth S</span>
           </h1>
           <p className="mt-6 text-xl lg:text-2xl text-gray-200">
             Showcasing my projects, blogs, and the services I offer
@@ -44,7 +44,7 @@ function Home() {
           </div>
         </div>
         {/* Profile Image */}
-        <div className="hidden lg:block lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
+        <div className="hidden md:block lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
           <img 
             src={Profile} 
             alt="Profile" 
