@@ -44,7 +44,7 @@ function Home() {
           <img 
             src={Profile} 
             alt="Profile" 
-            className="mx-auto" 
+            className="mx-auto w-full max-w-lg" 
             style={{ borderRadius: '27% 73% 42% 58% / 67% 31% 69% 33%' }}
              data-aos="fade-down"
           />
@@ -60,7 +60,7 @@ function Home() {
           </p>
           <div className="mt-10">
             <a
-              href="#services"
+              href="#protfolio"
               className="px-10 py-4 font-semibold text-gray-300 bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-500 transition-colors"
             >
               Explore My Work
@@ -72,14 +72,17 @@ function Home() {
           <img 
             src={Profile} 
             alt="Profile" 
-            className="mx-auto" 
+            className="mx-auto max-w-lg" 
             style={{ borderRadius: '27% 73% 42% 58% / 67% 31% 69% 33%' }} 
              data-aos="fade-down"
           />
         </div>
       </div>
       </section>
+      <div id="protfolio">
       <Work />
+
+      </div>
       <Contact />
     </>
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Socials from './Socials';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +17,20 @@ function Navbar() {
           <a href="/" className="hover:text-gray-300 transition-colors">
             Home
           </a>
-          <a href="/blogs" className="hover:text-gray-300 transition-colors">
-            Blogs
+          <a href="/" className="hover:text-gray-300 transition-colors">
+            About Me
+          </a>
+          <a href="/work" className="hover:text-gray-300 transition-colors">
+            Portfolio
           </a>
           <a href="/services" className="hover:text-gray-300 transition-colors">
             Services
+          </a>
+          <a href="/blogs" className="hover:text-gray-300 transition-colors">
+            Blogs
+          </a>
+          <a href="/contact" className="hover:text-gray-300 transition-colors">
+            Contact Me
           </a>
         </div>
 
@@ -105,64 +115,14 @@ function Navbar() {
           Blogs
         </a>
         <a
-          href="/services"
+          href="/contact"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
           data-aos="fade-right"
         >
           Contact Me
         </a>
-        <span className="text-2xl md:text-7xl font-bold hover:text-gray-300 transition-colors">
-  {/* YouTube Icon */}
-  <a
-    href="https://www.youtube.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mx-4 text-red-500 transition-colors"
-  >
-    <i className="fab fa-youtube"></i>
-  </a>
-
-  {/* LinkedIn Icon */}
-  <a
-    href="https://www.linkedin.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mx-4 text-blue-700 transition-colors"
-  >
-    <i className="fab fa-linkedin"></i>
-  </a>
-
-  {/* Blogger Icon */}
-  <a
-    href="https://www.blogger.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mx-4 text-orange-500 transition-colors"
-  >
-    <i className="fab fa-blogger"></i>
-  </a>
-
-  {/* GitHub Icon */}
-  <a
-    href="https://github.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mx-4 text-gray-300  transition-colors"
-  >
-    <i className="fab fa-github"></i>
-  </a>
-
-  {/* Twitter Icon */}
-  <a
-    href="https://twitter.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mx-4 text-blue-400 transition-colors"
-  >
-    <i className="fab fa-twitter"></i>
-  </a>
-</span>
+        <Socials />
 
       </div>
     </nav>

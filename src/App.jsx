@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Work from './pages/Home/Work';
 import Blogs from './pages/Blogs/Blogs';
 import Services from './pages/Services/Services';
+import Contact from './pages/Contact/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -26,6 +27,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/work" element={<Work />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
         
