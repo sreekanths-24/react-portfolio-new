@@ -17,7 +17,7 @@ function Navbar() {
           <a href="/" className="hover:text-gray-300 transition-colors">
             Home
           </a>
-          <a href="/" className="hover:text-gray-300 transition-colors">
+          <a href="/about" className="hover:text-gray-300 transition-colors">
             About Me
           </a>
           <a href="/work" className="hover:text-gray-300 transition-colors">
@@ -82,7 +82,7 @@ function Navbar() {
           Home
         </a>
         <a
-          href="/"
+          href="/about"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
           data-aos="fade-right"
