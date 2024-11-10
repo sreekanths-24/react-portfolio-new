@@ -1,11 +1,13 @@
 import React from 'react';
 import Bgimg from '../../assets/bgimg.jpg';
 import Profile from '../../assets/profile.png';
+import Work from './Work';
 
 function Home() {
   return (
+    <>
     <section
-      className="relative bg-cover bg-center h-dvh flex items-center justify-center"
+      className="relative bg-cover bg-center min-h-dvh flex items-center justify-center"
       style={{ backgroundImage: `url(${Bgimg})` }}
     >
       {/* Overlay */}
@@ -52,7 +54,10 @@ function Home() {
           />
         </div>
       </div>
-    </section>
+      </section>
+      <Work />
+    </>
+
   );
 }
 

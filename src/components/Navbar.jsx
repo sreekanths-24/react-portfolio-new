@@ -80,7 +80,7 @@ function Navbar() {
           About Me
         </a>
         <a
-          href="/"
+          href="/work"
           onClick={() => setIsOpen(false)}
           className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
           data-aos="fade-right"

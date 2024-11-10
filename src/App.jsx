@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
+import Work from './pages/Home/Work';
 import Blogs from './pages/Blogs/Blogs';
 import Services from './pages/Services/Services';
 import Navbar from './components/Navbar';
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
