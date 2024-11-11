@@ -3,8 +3,8 @@ import React from 'react';
 import Logo from '../assets/logo-light.png';
 function Footer() {
   return (
-    <footer className="bg-black text-gray-300 py-10">
-      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <footer className="bg-black text-gray-300 pb-10 pt-20">
+      <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className='grid grid-cols-2'>
           {/* Quick Links */}
           <div>
@@ -35,7 +35,7 @@ function Footer() {
 
         {/* Regards Content */}
         <div>
-          <h3 className="text-lg font-semibold text-indigo-500 mb-4">Regards</h3>
+          <h3 className="text-lg font-semibold text-indigo-500 mb-4">My Regards</h3>
           <div className=' block lg:flex'>
           <div className=' lg:w-1/4'>
               <img src={Logo} alt="" />
