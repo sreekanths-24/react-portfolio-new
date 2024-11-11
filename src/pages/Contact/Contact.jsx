@@ -5,7 +5,7 @@ import Socials from '../../components/Socials';
 function Contact() {
   return (
     <section
-      className="relative bg-cover bg-center min-h-screen  justify-center px-4 py-16 lg:px-6 lg:py-36"
+      className="relative bg-cover bg-center  min-h-screen  justify-center px-4 py-16 lg:px-6 lg:py-36"
       style={{ backgroundImage: `url(${Bgimg})` }}
     >
       {/* Overlay */}

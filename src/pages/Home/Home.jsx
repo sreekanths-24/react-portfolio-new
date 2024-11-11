@@ -28,7 +28,7 @@ function Home() {
   return (
     <>
       <section
-        className="relative bg-cover bg-center min-h-svh flex items-center justify-center"
+        className="relative bg-cover  bg-center min-h-svh flex items-center justify-center"
         style={{ backgroundImage: `url(${Bgimg})` }}
       >
         {/* Overlay */}
