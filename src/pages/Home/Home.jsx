@@ -37,7 +37,7 @@ function Home() {
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col md:flex-row md:items-center text-gray-300 w-full px-3 lg:px-12 max-w-7xl">
           {/* Profile Image */}
-          <div className="block md:hidden md:w-1/2 md:pl-8 mb-8 lg:mb-0">
+          <div className="block md:hidden md:w-1/2 md:pl-8  my-8 lg:mb-0">
             <img
               src={Profile}
               alt="Profile"
