@@ -14,22 +14,22 @@ function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8 text-white">
-          <a href="/" className="hover:text-gray-300 transition-colors">
+          <a href="/" className="hover:text-indigo-400 hover:font-bold transition-colors">
             Home
           </a>
-          <a href="/about" className="hover:text-gray-300 transition-colors">
+          <a href="/about" className="hover:text-indigo-400 hover:font-bold transition-colors">
             About Me
           </a>
-          <a href="/work" className="hover:text-gray-300 transition-colors">
+          <a href="/work" className="hover:text-indigo-400 hover:font-bold transition-colors">
             Portfolio
           </a>
-          <a href="/services" className="hover:text-gray-300 transition-colors">
+          <a href="/services" className="hover:text-indigo-400 hover:font-bold transition-colors">
             Services
           </a>
-          <a href="/blogs" className="hover:text-gray-300 transition-colors">
+          <a href="/blogs" className="hover:text-indigo-400 hover:font-bold transition-colors">
             Blogs
           </a>
-          <a href="/contact" className="hover:text-gray-300 transition-colors">
+          <a href="/contact" className="text-indigo-400 font-bold transition-colors">
             Contact Me
           </a>
         </div>
