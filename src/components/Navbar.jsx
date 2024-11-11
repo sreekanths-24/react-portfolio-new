@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-8">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-24">
         {/* Logo */}
         <a href="/" className="text-2xl font-bold text-white">
           Sreekanth S

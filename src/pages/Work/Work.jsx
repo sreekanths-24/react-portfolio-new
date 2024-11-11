@@ -27,13 +27,13 @@ function Work() {
       title: 'Saaya23 Website',
       link: 'https://saaya23.netlify.app/',
       image: 'https://i.imgur.com/XpSkQEa.mp4',
-      description: 'A website for college\'s arts and cultural fest.',
+      description: 'A website for my college\'s arts and cultural fest.',
     },
     {
       title: 'Athma23 Website',
       link: 'https://athma23.netlify.app/',
       image: 'https://i.imgur.com/hLA66e8.mp4',
-      description: 'A website for college\'s tech fest.',
+      description: 'A website for my college\'s tech fest.',
     },
     {
       title: 'Kalhara Concepts PVT LTD',

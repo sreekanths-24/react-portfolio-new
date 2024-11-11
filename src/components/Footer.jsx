@@ -4,7 +4,7 @@ import Logo from '../assets/logo-light.png';
 function Footer() {
   return (
     <footer className="bg-black text-gray-300 pb-10 pt-20">
-      <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container mx-auto px-4 md:px-24 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className='grid grid-cols-2'>
           {/* Quick Links */}
           <div>
