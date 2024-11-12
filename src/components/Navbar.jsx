@@ -1,19 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Socials from './Socials';
 import { Link, useLocation } from "react-router-dom";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+
+  // Scroll to top when the location (URL path) changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const linkClasses = (path) =>
     `hover:text-indigo-400 hover:font-bold transition-colors ${
       location.pathname === path ? "text-indigo-400 font-bold" : ""
     }`;
-  
-    const linkClassesMobile = (path) =>
-      `text-5xl md:text-7xl font-bold transition-colors ${
-        location.pathname === path ? "text-indigo-500" : "text-white hover:text-gray-300"
-      }`;
+
+  const linkClassesMobile = (path) =>
+    `text-5xl md:text-7xl font-bold transition-colors ${
+      location.pathname === path ? "text-indigo-500" : "text-white hover:text-gray-300"
+    }`;
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-24">
@@ -24,24 +31,12 @@ function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8 text-white">
-        <Link to="/" className={linkClasses("/")}>
-        Home
-      </Link>
-      <Link to="/about" className={linkClasses("/about")}>
-        About Me
-      </Link>
-      <Link to="/work" className={linkClasses("/work")}>
-        Portfolio
-      </Link>
-      <Link to="/services" className={linkClasses("/services")}>
-        Services
-      </Link>
-      <Link to="/blogs" className={linkClasses("/blogs")}>
-        Blogs
-      </Link>
-      <Link to="/contact" className={linkClasses("/contact")}>
-        Contact Me
-      </Link>
+          <Link to="/" className={linkClasses("/")}>Home</Link>
+          <Link to="/about" className={linkClasses("/about")}>About Me</Link>
+          <Link to="/work" className={linkClasses("/work")}>Portfolio</Link>
+          <Link to="/services" className={linkClasses("/services")}>Services</Link>
+          <Link to="/blogs" className={linkClasses("/blogs")}>Blogs</Link>
+          <Link to="/contact" className={linkClasses("/contact")}>Contact Me</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -70,7 +65,7 @@ function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden bg-black text-gray-300 absolute top-0 left-0 w-full h-dvh flex flex-col  ps-5 justify-center space-y-8 transition-all duration-300 ease-in-out transform ${
+        className={`md:hidden bg-black text-gray-300 absolute top-0 left-0 w-full h-dvh flex flex-col ps-5 justify-center space-y-8 transition-all duration-300 ease-in-out transform ${
           isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
         }`}
       >
@@ -83,50 +78,14 @@ function Navbar() {
         </button>
 
         {/* Links */}
-        <Link
-        to="/"
-        onClick={() => setIsOpen(false)}
-        className={linkClassesMobile("/")}
-      >
-        Home
-      </Link>
-      <Link
-        to="/about"
-        onClick={() => setIsOpen(false)}
-        className={linkClassesMobile("/about")}
-      >
-        About Me
-      </Link>
-      <Link
-        to="/work"
-        onClick={() => setIsOpen(false)}
-        className={linkClassesMobile("/work")}
-      >
-        Portfolio
-      </Link>
-      <Link
-        to="/services"
-        onClick={() => setIsOpen(false)}
-        className={linkClassesMobile("/services")}
-      >
-        Services
-      </Link>
-      <Link
-        to="/blogs"
-        onClick={() => setIsOpen(false)}
-        className={linkClassesMobile("/blogs")}
-      >
-        Blogs
-      </Link>
-      <Link
-        to="/contact"
-        onClick={() => setIsOpen(false)}
-        className={linkClassesMobile("/contact")}
-      >
-        Contact Me
-      </Link>
+        <Link to="/" onClick={() => setIsOpen(false)} className={linkClassesMobile("/")}>Home</Link>
+        <Link to="/about" onClick={() => setIsOpen(false)} className={linkClassesMobile("/about")}>About Me</Link>
+        <Link to="/work" onClick={() => setIsOpen(false)} className={linkClassesMobile("/work")}>Portfolio</Link>
+        <Link to="/services" onClick={() => setIsOpen(false)} className={linkClassesMobile("/services")}>Services</Link>
+        <Link to="/blogs" onClick={() => setIsOpen(false)} className={linkClassesMobile("/blogs")}>Blogs</Link>
+        <Link to="/contact" onClick={() => setIsOpen(false)} className={linkClassesMobile("/contact")}>Contact Me</Link>
+        
         <Socials />
-
       </div>
     </nav>
   );
