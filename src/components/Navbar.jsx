@@ -87,7 +87,6 @@ function Navbar() {
         to="/"
         onClick={() => setIsOpen(false)}
         className={linkClassesMobile("/")}
-        data-aos="fade-right"
       >
         Home
       </Link>
@@ -95,7 +94,6 @@ function Navbar() {
         to="/about"
         onClick={() => setIsOpen(false)}
         className={linkClassesMobile("/about")}
-        data-aos="fade-right"
       >
         About Me
       </Link>
@@ -103,7 +101,6 @@ function Navbar() {
         to="/work"
         onClick={() => setIsOpen(false)}
         className={linkClassesMobile("/work")}
-        data-aos="fade-right"
       >
         Portfolio
       </Link>
@@ -111,7 +108,6 @@ function Navbar() {
         to="/services"
         onClick={() => setIsOpen(false)}
         className={linkClassesMobile("/services")}
-        data-aos="fade-right"
       >
         Services
       </Link>
@@ -119,7 +115,6 @@ function Navbar() {
         to="/blogs"
         onClick={() => setIsOpen(false)}
         className={linkClassesMobile("/blogs")}
-        data-aos="fade-right"
       >
         Blogs
       </Link>
@@ -127,7 +122,6 @@ function Navbar() {
         to="/contact"
         onClick={() => setIsOpen(false)}
         className={linkClassesMobile("/contact")}
-        data-aos="fade-right"
       >
         Contact Me
       </Link>
