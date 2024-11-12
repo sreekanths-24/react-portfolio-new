@@ -18,7 +18,7 @@ function Contact() {
         {/* Text Content */}
               <div className=" py-6 lg:p-6 flex flex-col ">
                          {/* Contact Heading */}
-        <h2 className="relative text-5xl leading-none lg:text-7xl font-bold text-gray-300 mb-10">Let's <br /><span className='text-indigo-500'>Collaborate!</span></h2>
+        <h2 className="relative text-4xl leading-none lg:text-7xl font-bold text-gray-300 mb-10">Let's <br /><span className='text-indigo-500'>Collaborate!</span></h2>
           <h2 className="text-2xl font-semibold mb-4 text-gray-400">I'd Love to Hear From You!</h2>
           <p className=" mb-6 text-gray-200">
             Whether you want to work with me or have a question about a project you are working on or just want to say hi, feel free to send me a message through the form below and I will get to you ASAP.

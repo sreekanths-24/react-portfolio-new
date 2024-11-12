@@ -1,6 +1,9 @@
 import React from 'react';
 import Bgimg from "../../assets/bgimg.jpg";
-import Me from "../../assets/me.jpg";
+import Me from "../../assets/me2.jpg";
+import Me2 from "../../assets/me2.jpg";
+import Me3 from "../../assets/me3.jpg";
+import Me4 from "../../assets/me4.jpg";
 
 function About() {
   return (
