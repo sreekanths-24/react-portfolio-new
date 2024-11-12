@@ -47,7 +47,7 @@ function Card({ title, link, image, description }) {
       </a>
 
       <div className="pt-6">
-        <h3 className="text-2xl font-semibold text-gray-200 mb-4">{title}</h3>
+        <h3 className="text-2xl font-semibold text-indigo-400 mb-4">{title}</h3>
         <p className="text-gray-300 text-lg">{description}</p>
       </div>
     </div>

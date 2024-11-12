@@ -13,11 +13,13 @@ function Home() {
     const typed = new Typed(typedRef.current, {
       strings: [
         "I'm Sreekanth S.",
-        // "I'm a Web developer",
+        "I'm into UI/UX,",
+        "Web Development,",
+        "And Tech.",
       ], // Array of strings for typing effect
-      typeSpeed: 50, // Typing speed in milliseconds
+      typeSpeed: 100, // Typing speed in milliseconds
       backSpeed: 30, // Backspacing speed in milliseconds
-      loop: false, // Loop the typing animation
+      loop: true, // Loop the typing animation
     });
 
     // Cleanup on component unmount
@@ -28,14 +30,14 @@ function Home() {
   return (
     <>
       <section
-        className="relative bg-cover  bg-center min-h-svh flex items-center justify-center"
+        className="relative bg-cover  bg-center min-h-screen flex items-center justify-center"
         style={{ backgroundImage: `url(${Bgimg})` }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-70"></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center text-gray-300 w-full px-3 lg:px-12 max-w-7xl">
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center text-gray-300 w-full px-4 lg:px- max-w-7xl">
           {/* Profile Image */}
           <div className="block md:hidden md:w-1/2 md:pl-8  my-8 lg:mb-0">
             <img
@@ -53,9 +55,9 @@ function Home() {
               Hi there, <br />{" "}
               <span className="text-indigo-500"ref={typedRef}></span>
             </h1>
-            <p className="mt-6 text-xl lg:text-2xl text-gray-200 min-h-14">
+            <p className="mt-4 lg:text-xl text-gray-200 min-h-14">
               {/* <span ></span> Dynamic text here */}
-              I take Brands to the next level by creating an online pressence for their Businesss.
+              I can take your brand to the next level by creating an online pressence for your business.
             </p>
             <div className="mt-10">
               <a

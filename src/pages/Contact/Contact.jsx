@@ -20,13 +20,13 @@ function Contact() {
                          {/* Contact Heading */}
         <h2 className="relative text-5xl leading-none lg:text-7xl font-bold text-gray-300 mb-10">Let's <br /><span className='text-indigo-500'>Work Together!</span></h2>
           <h2 className="text-2xl font-semibold mb-4 text-gray-400">I'd Love to Hear From You!</h2>
-          <p className=" mb-6 text-gray-300">
+          <p className=" mb-6 text-gray-200">
             Whether you want to work with me or have a question about a project you are working on or just want to say hi, feel free to send me a message through the form below and I will get to you ASAP.
           </p>
-          <p className=" mb-6 text-gray-300">
+          <p className=" mb-6 text-gray-200">
             You can also reach out through Email <span className="font-semibold text-indigo-500">sreekanthsanthosh17@gmail.com</span>.
           </p>
-          <p className=" mb-6 text-gray-300">
+          <p className=" mb-6 text-gray-200">
             Click <a href="" className='font-semibold text-indigo-500'>here</a> to learn more about my personal interests, hobbies and my journey in the world of tech.You can also connect with me on social media.
                   </p>
                   <Socials />

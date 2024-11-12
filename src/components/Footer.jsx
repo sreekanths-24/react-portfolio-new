@@ -8,20 +8,20 @@ function Footer() {
         <div className='grid grid-cols-2'>
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-indigo-500 mb-4">Quick Links</h3>
+            <h3 className="text-2xl font-semibold text-indigo-500 mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="/" className="hover:text-indigo-400 transition">Home</a></li>
-              <li><a href="/" className="hover:text-indigo-400 transition">About Me</a></li>
-              <li><a href="/services" className="hover:text-indigo-400 transition">Services</a></li>
-              <li><a href="/work" className="hover:text-indigo-400 transition">Portfolio</a></li>
-              <li><a href="/blogs" className="hover:text-indigo-400 transition">Blogs</a></li>
-              <li><a href="/contact" className="hover:text-indigo-400 transition">Contact Me</a></li>
+              <li><a href="/" className="hover:text-bold hover:underline transition">Home</a></li>
+              <li><a href="/about" className="hover:text-bold hover:underline transition">About Me</a></li>
+              <li><a href="/services" className="hover:text-bold hover:underline transition">Services</a></li>
+              <li><a href="/work" className="hover:text-bold hover:underline transition">Portfolio</a></li>
+              <li><a href="/blogs" className="hover:text-bold hover:underline transition">Blogs</a></li>
+              <li><a href="/contact" className="hover:text-bold hover:underline transition">Contact Me</a></li>
             </ul>
           </div>
 
           {/* Social Links */}
           <div>
-            <h3 className="text-lg font-semibold text-indigo-500 mb-4">Follow Us</h3>
+            <h3 className="text-2xl font-semibold text-indigo-500 mb-4">Social Links</h3>
             <ul className="space-y-3">
               <li><a href="#" className="hover:text-indigo-400 transition">Twitter</a></li>
               <li><a href="#" className="hover:text-indigo-400 transition">LinkedIn</a></li>
@@ -35,7 +35,7 @@ function Footer() {
 
         {/* Regards Content */}
         <div>
-          <h3 className="text-lg font-semibold text-indigo-500 mb-4">My Regards</h3>
+          <h3 className="text-2xl font-semibold text-indigo-500 mb-4">My Regards</h3>
           <div className=' block lg:flex'>
           <div className=' lg:w-1/4'>
               <img src={Logo} alt="" />
