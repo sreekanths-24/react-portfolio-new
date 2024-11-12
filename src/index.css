@@ -37,3 +37,30 @@
     animation: fadeInRight 1s ease forwards;
   }
   
+
+  /* Add this in your global CSS file if you're not using Tailwind */
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05); /* Hover effect */
+}
+
+.skill-card img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card h4 {
+  color: white;
+  font-size: 1rem;
+}

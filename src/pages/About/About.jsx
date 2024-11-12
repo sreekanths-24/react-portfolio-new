@@ -4,9 +4,11 @@ import Me from "../../assets/me2.jpg";
 import Me2 from "../../assets/me2.jpg";
 import Me3 from "../../assets/me3.jpg";
 import Me4 from "../../assets/me4.jpg";
+import Skills from "../../components/Skills";
 
 function About() {
   return (
+    <>
     <section 
       className="relative bg-cover bg-center min-h-screen flex items-center justify-center pb-16 pt-28 px-4 lg:px-36"
       style={{ backgroundImage: `url(${Bgimg})` }}
@@ -39,6 +41,8 @@ function About() {
         </div>
       </div>
     </section>
+    <Skills />
+    </>
   );
 }
 
