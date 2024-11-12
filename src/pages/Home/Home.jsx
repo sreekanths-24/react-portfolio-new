@@ -44,7 +44,7 @@ function Home() {
               src={Profile}
               alt="Profile"
               className="mx-auto"
-              style={{ borderRadius: "27% 73% 42% 58% / 67% 31% 69% 33%", width: "90%", maxWidth: "400px" }}
+              style={{ borderRadius: "27% 73% 42% 58% / 67% 31% 69% 33%", width: "100%", maxWidth: "400px" }}
               data-aos="fade-down"
             />
           </div>

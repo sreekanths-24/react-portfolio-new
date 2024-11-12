@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
 import Socials from './Socials';
-
+import { Link, useLocation } from "react-router-dom";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
+  const linkClasses = (path) =>
+    `hover:text-indigo-400 hover:font-bold transition-colors ${
+      location.pathname === path ? "text-indigo-400 font-bold" : ""
+    }`;
+  
+    const linkClassesMobile = (path) =>
+      `text-5xl md:text-7xl font-bold transition-colors ${
+        location.pathname === path ? "text-indigo-500" : "text-white hover:text-gray-300"
+      }`;
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-24">
@@ -14,24 +24,24 @@ function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-8 text-white">
-          <a href="/" className="hover:text-indigo-400 hover:font-bold transition-colors">
-            Home
-          </a>
-          <a href="/about" className="hover:text-indigo-400 hover:font-bold transition-colors">
-            About Me
-          </a>
-          <a href="/work" className="hover:text-indigo-400 hover:font-bold transition-colors">
-            Portfolio
-          </a>
-          <a href="/services" className="hover:text-indigo-400 hover:font-bold transition-colors">
-            Services
-          </a>
-          <a href="/blogs" className="hover:text-indigo-400 hover:font-bold transition-colors">
-            Blogs
-          </a>
-          <a href="/contact" className="text-indigo-400 font-bold transition-colors">
-            Contact Me
-          </a>
+        <Link to="/" className={linkClasses("/")}>
+        Home
+      </Link>
+      <Link to="/about" className={linkClasses("/about")}>
+        About Me
+      </Link>
+      <Link to="/work" className={linkClasses("/work")}>
+        Portfolio
+      </Link>
+      <Link to="/services" className={linkClasses("/services")}>
+        Services
+      </Link>
+      <Link to="/blogs" className={linkClasses("/blogs")}>
+        Blogs
+      </Link>
+      <Link to="/contact" className={linkClasses("/contact")}>
+        Contact Me
+      </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -73,55 +83,54 @@ function Navbar() {
         </button>
 
         {/* Links */}
-        <a
-          href="/"
-          onClick={() => setIsOpen(false)}
-          className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
-          data-aos="fade-right"
-        >
-          Home
-        </a>
-        <a
-          href="/about"
-          onClick={() => setIsOpen(false)}
-          className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
-          data-aos="fade-right"
-        >
-          About Me
-        </a>
-        <a
-          href="/work"
-          onClick={() => setIsOpen(false)}
-          className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
-          data-aos="fade-right"
-        >
-          Portfolio
-        </a>
-        
-        <a
-          href="/services"
-          onClick={() => setIsOpen(false)}
-          className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
-          data-aos="fade-right"
-        >
-          Services
-        </a>
-        <a
-          href="/blogs"
-          onClick={() => setIsOpen(false)}
-          className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
-          data-aos="fade-right"
-        >
-          Blogs
-        </a>
-        <a
-          href="/contact"
-          onClick={() => setIsOpen(false)}
-          className="text-5xl md:text-7xl font-bold hover:text-gray-300 transition-colors"
-          data-aos="fade-right"
-        >
-          Contact Me
-        </a>
+        <Link
+        to="/"
+        onClick={() => setIsOpen(false)}
+        className={linkClassesMobile("/")}
+        data-aos="fade-right"
+      >
+        Home
+      </Link>
+      <Link
+        to="/about"
+        onClick={() => setIsOpen(false)}
+        className={linkClassesMobile("/about")}
+        data-aos="fade-right"
+      >
+        About Me
+      </Link>
+      <Link
+        to="/work"
+        onClick={() => setIsOpen(false)}
+        className={linkClassesMobile("/work")}
+        data-aos="fade-right"
+      >
+        Portfolio
+      </Link>
+      <Link
+        to="/services"
+        onClick={() => setIsOpen(false)}
+        className={linkClassesMobile("/services")}
+        data-aos="fade-right"
+      >
+        Services
+      </Link>
+      <Link
+        to="/blogs"
+        onClick={() => setIsOpen(false)}
+        className={linkClassesMobile("/blogs")}
+        data-aos="fade-right"
+      >
+        Blogs
+      </Link>
+      <Link
+        to="/contact"
+        onClick={() => setIsOpen(false)}
+        className={linkClassesMobile("/contact")}
+        data-aos="fade-right"
+      >
+        Contact Me
+      </Link>
         <Socials />
 
       </div>
