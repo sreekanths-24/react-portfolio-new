@@ -20,8 +20,8 @@ function About() {
       <div className="relative z-10 flex flex-col lg:flex-row items-center   space-y-8 lg:space-y-0 lg:space-x-10">
         {/* Text Section */}
         <div className="lg:w-1/2 space-y-6 animate-fadeInLeft">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Here’s <span className="text-indigo-400">My Story</span>
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight">
+            Here’s <span className="text-indigo-400">My Story...</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-200">
             I'm a passionate developer with a love for creating unique digital experiences. Over the years, I've honed my skills in various programming languages, frameworks, and tools to bring ideas to life. Every project I undertake is a step forward in my journey to innovate and inspire.

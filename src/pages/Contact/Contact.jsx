@@ -5,18 +5,18 @@ import Socials from '../../components/Socials';
 function Contact() {
   return (
     <section
-      className="relative bg-cover bg-center  min-h-screen  justify-center px-4 py-16 lg:px-6 lg:py-36"
+      className="relative bg-cover bg-center  min-h-screen  justify-center px-4 py-16  lg:p-36"
       style={{ backgroundImage: `url(${Bgimg})` }}
     >
       {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-70"></div>
  
       {/* Contact Content */}
-      <div className="relative  grid grid-cols-1 lg:grid-cols-2 gap-8  bg-opacity-80 lg:p-8 rounded-lg w-full  text-gray-800">
+      <div className="relative  grid grid-cols-1 lg:grid-cols-2 gap-8  bg-opacity-80  rounded-lg w-full  text-gray-800">
         
 
         {/* Text Content */}
-              <div className=" py-6 lg:p-6 flex flex-col ">
+              <div className=" py-6  flex flex-col ">
                          {/* Contact Heading */}
         <h2 className="relative text-4xl leading-none lg:text-7xl font-bold text-gray-300 mb-10">Let's <br /><span className='text-indigo-500'>Collaborate!</span></h2>
           <h2 className="text-2xl font-semibold mb-4 text-gray-400">I'd Love to Hear From You!</h2>
@@ -40,7 +40,7 @@ function Contact() {
               <input
                 type="text"
                 id="name"
-                className="w-full px-5 py-4 border border-gray-900 bg-gray-900 focus:outline-none focus:border-indigo-500 text-gray-300"
+                className="w-full px-5 py-4 border border-gray-800 bg-gray-800 focus:outline-none focus:border-indigo-500 text-gray-300"
                 required
                 placeholder='Enter your name'
               />
@@ -51,7 +51,7 @@ function Contact() {
               <input
                 type="tel"
                 id="phone"
-                className="w-full px-5 py-4 border border-gray-900 bg-gray-900 focus:outline-none focus:border-indigo-500  text-gray-300"
+                className="w-full px-5 py-4 border border-gray-800 bg-gray-800 focus:outline-none focus:border-indigo-500  text-gray-300"
                              placeholder='Enter your phone number  (Optional)'
                 />
             </div>
@@ -60,7 +60,7 @@ function Contact() {
               <input
                 type="email"
                 id="email"
-                className="w-full px-5 py-4 border border-gray-900 bg-gray-900 focus:outline-none focus:border-indigo-500 text-gray-300"
+                className="w-full px-5 py-4 border border-gray-800 bg-gray-800 focus:outline-none focus:border-indigo-500 text-gray-300"
                 required
                 placeholder='Enter your email address'
               />
@@ -71,7 +71,7 @@ function Contact() {
               <textarea
                 id="message"
                 rows="7"
-                className="w-full px-5 py-4 border border-gray-900 bg-gray-900 focus:outline-none focus:border-indigo-500 text-gray-300"
+                className="w-full px-5 py-4 border border-gray-800 bg-gray-800 focus:outline-none focus:border-indigo-500 text-gray-300"
                               required
                 placeholder='Enter your message'
               ></textarea>

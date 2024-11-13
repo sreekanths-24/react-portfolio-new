@@ -16,9 +16,9 @@ import AOS from "aos"; // Import AOS library
 function App() {
   // Initialize AOS when the component mounts
   AOS.init({
-    duration: 1000, // Animation duration
-    easing: "ease-in-out", // Animation easing
-    once: false, // Whether animation should happen only once
+    duration: 700, // Animation duration
+    easing: "ease", // Animation easing
+    once: true, // Whether animation should happen only once
   });
   return (
     <Router>

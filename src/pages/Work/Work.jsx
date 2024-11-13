@@ -9,19 +9,19 @@ function Work() {
       title: 'KBFC website',
       link: 'https://kbfc.netlify.app/',
       image: 'https://i.imgur.com/QiSukzs.mp4', // Updated Imgur video link
-      description: 'I won first place for designing this website.',
+      description: 'Build this website in 24 hours and won 1st place for a website design competition.',
     },
     {
       title: 'My old Portfolio Website',
       link: 'https://iamsreekanths.netlify.app/',
       image: 'https://i.imgur.com/FbJ83Dp.mp4',
-      description: 'Ahh the good old days..',
+      description: 'My old portfolio website. Developed to showcase my skills and projects.',
     },
     {
       title: 'All In One Shoppe',
       link: 'https://allinoneshoppe.com/shop/',
       image: 'https://i.imgur.com/7kRheS1.mp4',
-      description: 'An Ecommerce website for a small retailer.',
+      description: 'An Ecommerce website for a small retailer. My first project with a client.',
     },
     {
       title: 'Saaya23 Website',
@@ -44,10 +44,10 @@ function Work() {
   ];
 
   return (
-    <section className="pt-16 pb-20 px-4 lg:p-36 min-h-dvh bg-black">
-      <h2 className="text-5xl leading-none lg:text-7xl font-bold text-gray-300 mt-5 mb-20">
-        Check out <br className="block md:hidden" />
-        <span className="text-indigo-500">my Portfolio</span>
+    <section className="py-20 px-4 lg:p-36 min-h-dvh bg-black">
+      <h2 className="text-4xl leading-none lg:text-7xl font-bold text-gray-300 mt-5 mb-20">
+        These are some of <br className="block md:hidden" />
+        <span className="text-indigo-500">my Best Work...</span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-12">
         {cards.map((card, index) => (

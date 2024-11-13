@@ -18,9 +18,17 @@ function Skills() {
       name: "JavaScript",
       logo: "https://www.svgrepo.com/show/452045/js.svg",
      },
+    {
+      name: "Bootstrap",
+      logo: "https://www.svgrepo.com/show/353498/bootstrap.svg",
+     },
      {
-        name: "React",
+        name: "ReactJS",
         logo: "https://www.svgrepo.com/show/355190/reactjs.svg",
+      },
+     {
+        name: "TailwindCSS",
+        logo: "https://www.svgrepo.com/show/354431/tailwindcss-icon.svg",
       },
     {
       name: "Git",
@@ -62,11 +70,19 @@ function Skills() {
         name: "Chatgpt",
         logo: "https://www.svgrepo.com/show/306500/openai.svg",
       },
+     {
+        name: "Netlify",
+        logo: "https://www.svgrepo.com/show/376339/netlify.svg",
+      },
+     {
+        name: "JQuery",
+        logo: "https://www.svgrepo.com/show/452242/jquery.svg",
+      },
     // Add more skills as needed
   ];
   
   return (
-    <div className="skills-container py-20 bg-black px-4 lg:py-32 lg:px-32 min-h-screen">
+    <div className="skills-container  bg-black py-20 px-4 lg:py-32 lg:px-32 min-h-screen">
       <h2 className="text-4xl lg:text-7xl font-bold  mb-6 text-white">Tech <span className='text-indigo-500'>I Work With.</span></h2>
       <div className="skills-icons grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-2 lg:gap-3">
         {skillData.map((skill, index) => (

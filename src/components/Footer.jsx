@@ -1,21 +1,49 @@
 // Footer.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from '../assets/logo-light.png';
+import { Link, useLocation } from "react-router-dom";
+
 function Footer() {
+
+  const location = useLocation();
+
+  // Scroll to top when the location (URL path) changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  const linkClassesFooter = (path) =>
+    `hover:text-bold hover:underline transition ${
+      location.pathname === path ? "text-indigo-400 font-bold" : ""
+    }`;
+
   return (
-    <footer className="bg-black text-gray-300 pb-10 pt-20">
-      <div className="container mx-auto px-4 md:px-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <footer className="bg-black text-gray-300 pb-12">
+      <div className="container mx-auto pt-20 px-4 lg:pt-32 lg:px-32 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className='grid grid-cols-2'>
           {/* Quick Links */}
           <div>
             <h3 className="text-2xl font-semibold text-indigo-500 mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="/" className="hover:text-bold hover:underline transition">Home</a></li>
-              <li><a href="/about" className="hover:text-bold hover:underline transition">About Me</a></li>
-              <li><a href="/services" className="hover:text-bold hover:underline transition">Services</a></li>
-              <li><a href="/work" className="hover:text-bold hover:underline transition">Portfolio</a></li>
-              <li><a href="/blogs" className="hover:text-bold hover:underline transition">Blogs</a></li>
-              <li><a href="/contact" className="hover:text-bold hover:underline transition">Contact Me</a></li>
+              <li>
+                <Link to="/" className={linkClassesFooter("/")}>Home</Link>
+              </li>
+              <li>
+                <Link to="/about" className={linkClassesFooter("/about")}>About Me</Link>
+              </li>
+              <li>
+                <Link to="/work" className={linkClassesFooter("/work")}>Portfolio</Link>
+              </li>
+              <li>
+                <Link to="/services" className={linkClassesFooter("/services")}>Services</Link>
+              </li>
+              <li>
+                <Link to="/blogs" className={linkClassesFooter("/blogs")}>Blogs</Link>
+              </li>
+              <li>
+              <Link to="/contact" className={linkClassesFooter("/contact")}>Contact Me</Link>
+
+              </li>
             </ul>
           </div>
 
