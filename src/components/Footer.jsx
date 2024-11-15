@@ -21,13 +21,13 @@ function Footer() {
     <footer className="bg-black text-gray-200 pb-12">
       <div className="container mx-auto pt-20 px-4 lg:pt-32 lg:px-32 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
-          <img src={Logo} alt="" className=' lg:w-3/4'/>
+          <img src={Logo} alt="" className='w-1/5 lg:w-3/4'/>
           </div>
         <div className='grid grid-cols-2'>
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold text-indigo-400 mb-4">Quick Links</h3>
+            <h3 className="text-2xl font-semibold text-indigo-400 mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className={linkClassesFooter("/")}>Home</Link>
@@ -53,7 +53,7 @@ function Footer() {
 
           {/* Social Links */}
           <div>
-            <h3 className="text-xl font-semibold text-indigo-400 mb-4">Social Links</h3>
+            <h3 className="text-2xl font-semibold text-indigo-400 mb-4">Social Links</h3>
             <ul className="space-y-3">
               <li><a href="#" className="hover:text-indigo-400 text-lg md:text-xl transition">Twitter</a></li>
               <li><a href="#" className="hover:text-indigo-400 text-lg md:text-xl transition">LinkedIn</a></li>
@@ -67,11 +67,11 @@ function Footer() {
 
         {/* Regards Content */}
         <div>
-          <h3 className="text-xl font-semibold text-indigo-400 mb-4">My Regards</h3>
+          <h3 className="text-2xl font-semibold text-indigo-400 mb-4">My Regards</h3>
           <div className=' block lg:flex'>
             <div className=' pt-1 lg:pt-0 '>
             <p className="text-lg md:text-xl text-gray-200">
-          I appreciate your visit to my personal website. Your presence means a lot to me, and I hope you find valuable content and information here. Feel free to explore and reach out if you have any questions or feedback, you can do that by filling the contact me form. Thank you for your time and interest.
+          I appreciate your visit to my personal website. Your presence means a lot to me, and I hope you find valuable content and information here. Feel free to explore and reach out if you have any questions or feedback. Thank you for your time and interest.
           </p>
             </div>
            

@@ -6,13 +6,13 @@ function Work() {
   // Example data for the cards
   const cards = [
     {
-      title: 'KBFC website',
+      title: 'Web For Team',
       link: 'https://kbfc.netlify.app/',
       image: 'https://i.imgur.com/QiSukzs.mp4', // Updated Imgur video link
       description: 'Build this website in 24 hours and won 1st place for a website design competition.',
     },
     {
-      title: 'My old Portfolio Website',
+      title: 'My old Portfolio',
       link: 'https://iamsreekanths.netlify.app/',
       image: 'https://i.imgur.com/FbJ83Dp.mp4',
       description: 'My old portfolio website. Developed to showcase my skills and projects.',
@@ -27,19 +27,25 @@ function Work() {
       title: 'Saaya23 Website',
       link: 'https://saaya23.netlify.app/',
       image: 'https://i.imgur.com/XpSkQEa.mp4',
-      description: 'A website for my college\'s arts and cultural fest.',
+      description: 'A showcase website for my college\'s arts and cultural fest.',
     },
     {
       title: 'Athma23 Website',
       link: 'https://athma23.netlify.app/',
       image: 'https://i.imgur.com/hLA66e8.mp4',
-      description: 'A website for my college\'s tech fest.',
+      description: 'A showcase website for my college\'s technical fest.',
     },
+    // {
+    //   title: 'Kalhara Concepts',
+    //   link: 'https://kalharaconcepts.com/',
+    //   image: 'https://i.imgur.com/ASXpw2r.mp4',
+    //   description: 'Portfolio website for a construction company.',
+    // },
     {
-      title: 'Kalhara Concepts PVT LTD',
-      link: 'https://kalharaconcepts.com/',
-      image: 'https://i.imgur.com/ASXpw2r.mp4',
-      description: 'Portfolio website of a construction company.',
+      title: 'Envi 6 Techfest',
+      link: 'https://sreekanths-24.github.io/envi6/',
+      image: 'https://i.imgur.com/vQCTYXS.mp4',
+      description: 'Won 2nd price for developing this website in 3 hours.',
     },
   ];
 
