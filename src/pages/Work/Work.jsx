@@ -47,9 +47,9 @@ function Work() {
     <section className="py-20 px-4 lg:p-36 min-h-dvh bg-black">
       <h2 className="text-4xl leading-none lg:text-7xl font-bold text-gray-300 mt-5 mb-20">
         These are some of <br className="block md:hidden" />
-        <span className="text-indigo-500">my Best Work...</span>
+        <span className="text-indigo-400">my Best Work...</span>
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-24 lg:gap-x-12">
         {cards.map((card, index) => (
           <Card
             key={index}

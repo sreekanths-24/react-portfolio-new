@@ -45,19 +45,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 
 }
 
 
-.skill-card img {
-  width: 4rem;
-  height: 4rem;
-  margin-bottom: 1rem;
-}
+/* .skill-card img { */
+  /* width: 4rem; */
+  /* height: 4rem; */
+  /* margin-bottom: 1rem; */
+/* } */
 
-.skill-card h4 {
+/* .skill-card h4 {
   color: white;
   font-size: 1rem;
-}
+} */

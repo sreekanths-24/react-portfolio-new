@@ -13,7 +13,7 @@ function Card({ title, link, image, description }) {
   };
 
   return (
-    <div className="bg-transparent overflow-hidden transform transition duration-300 lg:hover:scale-105 ">
+    <div className="bg-transparent overflow-hidden transform transition duration-300  ">
       <a href={link} target="blank">
         {isLoading && (
           <div className="flex items-center justify-center w-full h-48 bg-gray-800">
@@ -47,8 +47,8 @@ function Card({ title, link, image, description }) {
       </a>
 
       <div className="pt-6">
-        <h3 className="text-2xl font-semibold text-indigo-400">{title}</h3>
-        <p className="text-gray-300 ">{description}</p>
+        <h3 className="text-3xl font-semibold text-indigo-400">{title}</h3>
+        <p className="text-lg md:text-xl text-gray-200 mt-3">{description}</p>
       </div>
     </div>
   );

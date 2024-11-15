@@ -83,8 +83,8 @@ function Skills() {
   
   return (
     <div className="skills-container  bg-black py-20 px-4 lg:py-32 lg:px-32 min-h-screen">
-      <h2 className="text-4xl lg:text-7xl font-bold  mb-6 text-white">Tech <span className='text-indigo-500'>I Work With.</span></h2>
-      <div className="skills-icons grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-2 lg:gap-3">
+      <h2 className="text-4xl lg:text-7xl font-bold  mb-12 lg:mb-20 text-white">Tech <span className='text-indigo-400'>I Work With.</span></h2>
+      <div className="skills-icons grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-2 lg:gap-3">
         {skillData.map((skill, index) => (
           <SkillCard key={index} name={skill.name} logo={skill.logo} />
         ))}

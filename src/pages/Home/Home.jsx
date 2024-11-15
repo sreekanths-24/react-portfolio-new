@@ -15,7 +15,7 @@ function Home() {
         "I'm Sreekanth S.",
         "I'm into UI/UX,",
         "Web Development,",
-        "And Tech.",
+        "App Development,",
       ], // Array of strings for typing effect
       typeSpeed: 100, // Typing speed in milliseconds
       backSpeed: 30, // Backspacing speed in milliseconds
@@ -44,7 +44,7 @@ function Home() {
               src={Profile}
               alt="Profile"
               className="mx-auto"
-              style={{ borderRadius: "27% 73% 42% 58% / 67% 31% 69% 33%", width: "100%", maxWidth: "400px" }}
+              style={{ borderRadius: "27% 73% 42% 58% / 67% 31% 69% 33%", width: "95%", maxWidth: "400px" }}
               data-aos="fade-down"
             />
           </div>
@@ -53,9 +53,9 @@ function Home() {
           <div className="md:w-1/2 md:pr-8" data-aos="fade-down">
             <h1 className="text-4xl lg:text-7xl font-bold leading-tight">
               Hi there, <br />{" "}
-              <span className="text-indigo-500"ref={typedRef}></span>
+              <span className="text-indigo-400"ref={typedRef}></span>
             </h1>
-            <p className="mt-4 lg:text-xl text-gray-200 min-h-14">
+            <p className="mt-4 text-lg md:text-xl  text-gray-200 min-h-14">
               {/* <span ></span> Dynamic text here */}
               I can take your brand to the next level by creating an online pressence for your business.
             </p>

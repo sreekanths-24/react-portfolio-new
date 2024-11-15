@@ -8,7 +8,7 @@ function Socials() {
     href="https://www.youtube.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="mx-4 text-red-500 transition-colors"
+    className="mr-3 text-red-500 transition-colors"
   >
     <i className="fab fa-youtube"></i>
   </a>
@@ -18,7 +18,7 @@ function Socials() {
     href="https://www.linkedin.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="mx-4 text-blue-700 transition-colors"
+    className="mx-3 text-blue-700 transition-colors"
   >
     <i className="fab fa-linkedin"></i>
   </a>
@@ -28,7 +28,7 @@ function Socials() {
     href="https://www.blogger.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="mx-4 text-orange-500 transition-colors"
+    className="mx-3 text-orange-500 transition-colors"
   >
     <i className="fab fa-blogger"></i>
   </a>
@@ -38,7 +38,7 @@ function Socials() {
     href="https://github.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="mx-4 text-gray-300  transition-colors"
+    className="mx-3 text-gray-300  transition-colors"
   >
     <i className="fab fa-github"></i>
   </a>
@@ -48,7 +48,7 @@ function Socials() {
     href="https://twitter.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="mx-4 text-blue-400 transition-colors"
+    className="mx-3 text-blue-400 transition-colors"
   >
     <i className="fab fa-twitter"></i>
   </a>
