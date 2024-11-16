@@ -13,7 +13,7 @@ function Footer() {
   }, [location.pathname]);
 
   const linkClassesFooter = (path) =>
-    `hover:text-bold hover:underline transition text-lg md:text-xl ${
+    `hover:text-bold transition text-lg md:text-xl ${
       location.pathname === path ? "text-indigo-400 font-bold" : ""
     }`;
 
